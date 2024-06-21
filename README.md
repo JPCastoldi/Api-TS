@@ -4,16 +4,17 @@ Esta é uma API construída com Node.js, TypeScript, Prisma e SQLite, seguindo o
 
 ## Requisitos
 
-- Node.js v14 ou superior
+- Node.js v16 ou superior
 - npm ou yarn
+- Docker
 
 ## Instalação
 
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/my-api.git
-    cd my-api
+    git clone https://github.com/JPCastoldi/Api-TS.git
+    cd Api-TS
     ```
 
 2. Instale as dependências:
@@ -35,21 +36,21 @@ Esta é uma API construída com Node.js, TypeScript, Prisma e SQLite, seguindo o
     npx prisma generate
     ```
 
-## Uso
+## Uso com Docker
 
-1. Inicie o servidor:
-
-    ```bash
-    npm run dev
-    ```
-
-    ou
+1. Construa a imagem Docker:
 
     ```bash
-    yarn dev
+    docker build -t my-api .
     ```
 
-2. A API estará disponível em `http://localhost:3000`.
+2. Rode o contêiner:
+
+    ```bash
+    docker run -p 3000:3000 my-api
+    ```
+
+3. A API estará disponível em `http://localhost:3000`.
 
 ## Endpoints
 
