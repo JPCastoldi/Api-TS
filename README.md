@@ -1,4 +1,4 @@
-# My API
+# API-TS
 
 Esta é uma API construída com Node.js, TypeScript, Prisma e SQLite, seguindo o padrão MVC.
 
@@ -198,6 +198,4 @@ Esta é uma API construída com Node.js, TypeScript, Prisma e SQLite, seguindo o
     ```
     DELETE /api/comments/:id
     ```
-
-## Estrutura do Projeto
 
